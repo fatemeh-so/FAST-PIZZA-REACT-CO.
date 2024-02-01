@@ -5,12 +5,12 @@ import CartItem from "../cart/CartItem";
 import ButtonLink from "../../ui/ButtonLink";
 import { useDispatch, useSelector } from "react-redux";
 import { clearItem, getCart } from "./CartSlice";
-import EmptyCart from './EmptyCart'
+import EmptyCart from "./EmptyCart";
 function Cart() {
   const username = useSelector((state) => state.user.username);
 
   const cart = useSelector(getCart);
-  if(cart.length<1)return <EmptyCart/>
+  if (cart.length < 1) return <EmptyCart />;
   const dispatch = useDispatch();
   return (
     <div className="px-4">
@@ -30,7 +30,7 @@ function Cart() {
           Order pizzas
         </Button>
         <Button type="secondary" onClick={() => dispatch(clearItem())}>
-          Clear cart
+          Clear Carts
         </Button>
       </div>
     </div>
