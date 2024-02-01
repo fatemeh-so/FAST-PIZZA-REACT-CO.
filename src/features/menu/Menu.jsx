@@ -7,7 +7,7 @@ function Menu() {
 
   return(
     
-    <ul className=" divide-y divide-stone-300 px-3">
+    <ul className=" divide-y divide-stone-300 px-2">
       {menu.map(pizza=><MenuItem  pizza={pizza} key={pizza.id}/>)}
     </ul>
     
