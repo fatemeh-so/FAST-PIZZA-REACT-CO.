@@ -30,7 +30,7 @@ function Cart() {
           Order pizzas
         </Button>
         <Button type="secondary" onClick={() => dispatch(clearItem())}>
-          Clear Carts
+          Clear Cart
         </Button>
       </div>
     </div>
